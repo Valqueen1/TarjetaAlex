@@ -1,0 +1,68 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(img/cone-reunion.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Contenedor de la invitación */
+.invitation-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 500px;
+    width: 80%;
+}
+
+/* Estilos del texto de la invitación */
+.invitation-text {
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Botón de confirmación */
+.confirm-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #85a392; /* Color a tono con el motivo vintage */
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+    background-color: #678b6b;
+}
+
+/* Animación de entrada del texto */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Estilos para el enlace de ubicación */
+.location-link {
+    display: block;
+    margin-bottom: 15px;
+    color: #678b6b; /* A tono con el estilo vintage */
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.location-link:hover {
+    color: #85a392;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Audio de fondo-->
+    <!-- Única instancia del reproductor de música de fondo -->
+    <audio id="background-music" loop>
+        <source src="close-to-you.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <!-- Contenedor principal -->
+    <div class="invitation-container">
+        <!-- Texto de la invitación -->
+        <div class="invitation-text">
+            <h1>¡Estás invitado al primer cumpleaños de Alexandra!</h1>
+            <p>Te esperamos el <strong>15/09</strong>  <br> 
+                a las <strong>9:00 (hasta las 18)</strong><br> 
+                en <strong>Ruta 11, km 998 (pasando la<br> 
+                planta de Amarilla Gas, a 300m)</strong>. <br>
+                Podés confirmar tu asistencia<br>
+                en el form haciendo clic <br>
+                en el botón de abajo</p>
+        </div>
+
+        <!-- Enlace de ubicación antes del botón de confirmación -->
+        <a href="https://www.google.com/maps?q=-27.48075,-59.06065&z=17&hl=es" target="_blank" class="location-link">Ver ubicación en Google Maps</a><br>
+
+        <!-- Botón de confirmación -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_j2Ro4EzTjalEPJ8HLWXk0aSvy7vAXjvmD29jHttmpYwm4g/viewform?usp=pp_url" class="confirm-button" target="_blank">Confirmar asistencia</a>
+    </div>
+
+    <!-- Script que controla la reproducción del audio -->
+    <script src="script.js"></script>
+</body>
+
+</html>
